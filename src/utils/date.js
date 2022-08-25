@@ -38,5 +38,5 @@ export const getNowMonth = () => {
 
 export const getNowDay = () =>  {
     let nowDay = new Date();
-    return nowDay.getDay();
+    return nowDay.getDate();
 }
