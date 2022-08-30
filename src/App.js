@@ -39,29 +39,15 @@ function App() {
     dayArray.push(index)
   }
 
-  
-  let arrayObj = [];
-  for (let i=0; i<dayArray.length; i++) {
-    let kek = taskArray.filter(x=> Number(x.date.slice(0,2)) === dayArray[i])
-    console.log(kek)
-    if(kek ==null)
-    {
-
-    }
-    let day = {
-      day: dayArray[i],
-      tasks: kek.te
-    }
-  };
-
   return (
     <div className="App">
       <Header />
 
-      <Main modalDay={modalDay} setModalDay={setModalDay} nowDayTask={nowDayTask} taskArray={taskArray} isLogin={isLogin} 
-            modalReg={modalReg} setModalReg={setModalReg} 
-            year={year} month={month} day={day} dayArray={dayArray} 
-            modalLogin={modalLogin} setModalLogin={setModalLogin}
+      <Main modalDay={modalDay} setModalDay={setModalDay} 
+        nowDayTask={nowDayTask} taskArray={taskArray} isLogin={isLogin} 
+        modalReg={modalReg} setModalReg={setModalReg} 
+        year={year} month={month} day={day} dayArray={dayArray} 
+        modalLogin={modalLogin} setModalLogin={setModalLogin}
       />
     </div>
   );

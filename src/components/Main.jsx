@@ -12,10 +12,10 @@ const Main = ({year, month, day, dayArray, modalReg, setModalReg, modalLogin, se
             <Routes>
               <Route>
                   <Route path='/' element={<TableMonth year={year} month={month} day={day} 
-                                                      dayArray={dayArray} isLogin={isLogin} 
-                                                      nowDayTask={nowDayTask} taskArray={taskArray}
-                                                      modalDay={modalDay} setModalDay={setModalDay}
-                                                      />}
+                                              dayArray={dayArray} isLogin={isLogin} 
+                                              nowDayTask={nowDayTask} taskArray={taskArray}
+                                              modalDay={modalDay} setModalDay={setModalDay}
+                                            />}
                   />
                   <Route path='profile' element={
                     <Profile year={year} month={month} day={day} 

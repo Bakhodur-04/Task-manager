@@ -31,14 +31,26 @@ const TableMonth = ({year, month, day, dayArray, isLogin, nowDayTask, taskArray,
 
                             <div className='month'>
                                 <ul className='month__list'>
-                                    {dayArray.map(el =>
-                                        // taskArray !== null && taskArray !== undefined 
+                                    {dayArray.map(el => {
+                                        taskArray !== null && taskArray !== undefined
+                                        ? taskArray.map(elem => 
+                                            Number(elem.date.slice(0,2)) === el
+                                            ? <TableDay modalDay={modalDay} setModalDay={setModalDay} taskArray={taskArray} key={el} day={el}/>
+                                            : <TableDay modalDay={modalDay} setModalDay={setModalDay}  key={el} day={el}/>
+                                            )
+                                        : <TableDay modalDay={modalDay} setModalDay={setModalDay}  key={el} day={el}/>
+                                        return (
+                                            <TableDay modalDay={modalDay} setModalDay={setModalDay} key={el} day={el}/>
+                                        )
+                                        
+                                    }
+                                        //  
                                         // ? taskArray.map(elem => 
                                         //     Number(elem.date.slice(0,2)) === el
                                         //     ? <TableDay modalDay={modalDay} setModalDay={setModalDay} taskArray={taskArray} key={el} day={el}/>
                                         //     : <TableDay modalDay={modalDay} setModalDay={setModalDay}  key={el} day={el}/>
                                         //     )
-                                        <TableDay modalDay={modalDay} setModalDay={setModalDay}  key={el} day={el}/>
+                                        
                                         // Number(nowDayTask.slice(0,2)) === el 
                                         // ? <TableDay modalDay={modalDay} setModalDay={setModalDay} taskArray={taskArray} key={el} day={el}/>
                                         // : <TableDay modalDay={modalDay} setModalDay={setModalDay}  key={el} day={el}/>
