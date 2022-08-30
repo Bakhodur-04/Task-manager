@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.43c630e4.css",
-    "main.js": "/static/js/main.07cd4c49.js",
+    "main.css": "/static/css/main.64822a1b.css",
+    "main.js": "/static/js/main.48b786a8.js",
     "static/media/calendar1.svg": "/static/media/calendar1.37a88db9a1484380b50a.svg",
     "static/media/calendar2.svg": "/static/media/calendar2.2b9562cf24c06a626186.svg",
     "static/media/calendar3.svg": "/static/media/calendar3.5f90c7d1fa7534eb5f3a.svg",
@@ -15,11 +15,11 @@
     "static/media/delete.svg": "/static/media/delete.04b5516d5490aa3484e4.svg",
     "static/media/check.svg": "/static/media/check.ec4e7437b664e61dbbe4.svg",
     "index.html": "/index.html",
-    "main.43c630e4.css.map": "/static/css/main.43c630e4.css.map",
-    "main.07cd4c49.js.map": "/static/js/main.07cd4c49.js.map"
+    "main.64822a1b.css.map": "/static/css/main.64822a1b.css.map",
+    "main.48b786a8.js.map": "/static/js/main.48b786a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.43c630e4.css",
-    "static/js/main.07cd4c49.js"
+    "static/css/main.64822a1b.css",
+    "static/js/main.48b786a8.js"
   ]
 }

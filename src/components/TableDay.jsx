@@ -8,9 +8,10 @@ const TableDay = ({day, taskArray, isComplete, setModalDay}) => {
           {
             taskArray !== null && taskArray !== undefined
             ? taskArray.map(el =>
-                <li key={el.taskId} className='tasks-item' style={el.isCompleted === true ? {textDecoration: 'line-through'} : {}}>{el.taskId}. {el.text}</li>
+              Number(el.date.slice(0,2)) === day
+                ? <li key={el.taskId} className='tasks-item' style={el.isCompleted === true ? {textDecoration: 'line-through'} : {}}>{el.taskId}. {el.text}</li>
+                : <li key={el.taskId}></li>
               )
-            
             : <li className='tasks-item'></li>
           }
           
