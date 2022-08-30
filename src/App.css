@@ -100,7 +100,6 @@ ul {
 .date-now {
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 30px;
 }
 
 .week {
@@ -120,9 +119,15 @@ ul {
   color: #232323;
 }
 
+.table-month-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .month {
   width: 1640px;
-  height: 890px;
+  min-height: 890px;
   background-color: #BFE4C7;
   border-radius: 0 0 15px 15px;
 }
@@ -131,25 +136,22 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 28px 28px 27px;
+  padding: 3px 28px 27px;
 }
 
 .table-day {
   width: 205px;
-  height: 190px;
+  height: 170px;
   border-radius: 20px;
   padding: 20px 20px 14px 22px;
   background-color: white;
   position: relative;
   cursor: pointer;
+  margin-top: 25px;
 }
 
 .table-day:not(:nth-child(7n)) {
   margin-right: 24.5px;
-}
-
-.table-day:not(:nth-child(n+22)) {
-  margin-bottom: 25px;
 }
 
 .table-day:hover {
@@ -165,10 +167,49 @@ ul {
   color: #333333;
 }
 
-.nowday-title {
+.nowday__title {
+  margin-top: 15px;
   font-size: 40px;
   font-weight: 500;
   color: #464646;
+}
+
+.nowday__list {
+  padding-top: 30px;
+}
+
+.nowday__item {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  min-width: 500px;
+}
+
+.btn-pen {
+  margin-left: 30px;
+  background: url(./img/pen.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+}
+
+.btn-done {
+  margin-left: 30px;
+  background: url(./img/check.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+}
+
+.btn-cross {
+  margin-left: 30px;
+  background: url(./img/delete.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: center;
 }
 
 .profile {
